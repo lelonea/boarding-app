@@ -23,6 +23,15 @@ These instructions will get you a copy of the project up and running on your loc
    ```bash
    git clone git@github.com:lelonea/boarding-app.git
    ```
+2. **Navigate to the project directory**
+   ```bash
+   cd boarding-app
+   ```
+3. **Checkout to the development branch**
+   ```bash
+    git checkout development
+    ```
+   
    
 
 ### Running tests
