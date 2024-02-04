@@ -14,7 +14,9 @@ class BoardingApi:
         :return: List of strings, each representing a step in the journey.
         """
         # Serialize dictionaries into BoardingCard objects
-        boarding_cards = [BoardingCard(**card_data) for card_data in boarding_cards_data]
+        boarding_cards = [
+            BoardingCard(**card_data) for card_data in boarding_cards_data
+        ]
 
         # Use JourneyService to sort boarding cards and generate journey instructions
         try:

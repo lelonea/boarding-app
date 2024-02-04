@@ -29,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
    ```
 3. **Checkout to the development branch**
    ```bash
-    git checkout development
+   git checkout development
     ```
    
    

@@ -11,7 +11,9 @@ class JourneyService:
         - A list of strings, where each string is an instruction for a part of the journey.
         """
         # Generate instructions for each card and add a final message indicating journey completion.
-        instructions = [JourneyService.format_instruction(card) for card in sorted_cards]
+        instructions = [
+            JourneyService.format_instruction(card) for card in sorted_cards
+        ]
         instructions.append("You have arrived at your final destination.")
         return instructions
 
@@ -52,13 +54,13 @@ class JourneyService:
 
         # Aggregate additional details like gate, seat, and baggage information.
         additional_details = []
-        if gate := card.additional_info.get('Gate'):
+        if gate := card.additional_info.get("Gate"):
             additional_details.append(f"Gate {gate},")
         if card.seat and card.seat.lower() != "no seat":
             additional_details.append(f"seat {card.seat}.")
-        if baggage_drop := card.additional_info.get('Baggage drop'):
+        if baggage_drop := card.additional_info.get("Baggage drop"):
             additional_details.append(f"Baggage drop at {baggage_drop}.")
-        elif baggage := card.additional_info.get('Baggage'):
+        elif baggage := card.additional_info.get("Baggage"):
             additional_details.append(f"Baggage {baggage}.")
 
         # Combine all parts into the final instruction.
