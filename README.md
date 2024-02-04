@@ -20,8 +20,12 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 1. **Clone the repository**
-2. **Install the required packages**
    ```bash
    git clone git@github.com:lelonea/boarding-app.git
    ```
+2. **Checkout to the development branch**
+   ```bash
+    git checkout development
+    ```
+   
    
